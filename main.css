@@ -1,23 +1,23 @@
-.carousel{
+.carousel {
   position: relative;
 }
 
-.carousel__item{
+.carousel__item {
   height: 300px;
-  background: light blue;
+  background: grey;
   padding: 1em;
-  fount-family: "Quicksand", sans-serif;
-  fount-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
   font-size: 2em;
-  color: =#ffffff;
+  color: #ffffff;
   display: none;
 }
 
-.carousel__item--selected{
+.carousel__item--selected {
   display: block;
 }
 
-.carousel__nav{
+.carousel__nav {
   width: 100%;
   padding: 20px 0;
   position: absolute;
@@ -26,16 +26,16 @@
   text-align: center;
 }
 
-.carousel__button{
+.carousel__button {
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: rgba(255,255,255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 
-.carousel__button--selected{
-  background: rgba(255,255,255,0.5);
+.carousel__button--selected {
+  background: rgba(255, 255, 255, 0.5);
 }
