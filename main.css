@@ -3,6 +3,7 @@
     height: 190px;
     width: 25%;
     margin: 0 auto;
+    object-fit: cover;
 }
 .carousel__track-container {
     background: transparent;
