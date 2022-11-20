@@ -1,19 +1,69 @@
 <!DOCTYPE html>
-<html lang = "en"
+<html lang="en">
 <head>
-<link href="main.css" rel="stylesheet" type="text/css"> 
+    <link href="main.css" rel="stylesheet">
 
 </head>
-
-  <body>
-    <script src="main.js"></script>
+<!--I wanted wordwrap for my text -->
+<style>
+        div.wordWrap {
+            text-align: left;
+            width: 500px;
+            word-wrap: normal;
+            text-indent: 15px;
+            position: center;
+        }
+</style>
+<body>
+    <!--This is the code needed for the picture carousel-->
     <div class="carousel">
-      <button class="carousel__button"></button>
-      <div class="carousel__item">Welcome Page</div>
-      <div class="carousel__item">Hobbies Page</div>
-      <div class="carousel__item">About me Page</div>
-      
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="img/LeftArrow.jpg" alt="">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__images" src="img\GreenMan1.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__images" src="img\Face1.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__images" src="img\731AMS_Pinup3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="img/RightArrow.jpg" alt="">
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+        
     </div>
-   
-  </body>
+    <script src="main.js"></script>
+    
+    
+    <!--This is the code for the paragraphs-->
+    <div class="wordWrap">
+        Hi, my name is Sterling and this is my website. I currently go to
+        Southwestern college where I study computer programming. In my spare time
+        I like to draw and play games. The picturse above are ones I made.
+    </div>
+    <div class="wordWrap">
+        Some other things to know about me is that I like to do things out doors.
+        Like camping in the forest or hiking in the mountains. I know these are 
+        completely different things but I like to be well rounded.
+    </div>
+    <pre>
+    Hyper Links to some of my favorite sites.
+    <a href="https://www.wowhead.com">World of Warcraft Help!</a>
+    <a href="https://www.youtube.com">Who doesnt like YouTube.</a>
+    <a href="https://www.roblox.com">Roblox with the kids.</a>
+
+</pre>
+</body>
 </html>
+
