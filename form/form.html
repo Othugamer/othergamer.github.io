@@ -1,22 +1,61 @@
-<form>
-  <label for="fname">First name:</label<br>
-    <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label<br>
-    <input type="text" id="lname" name="lname"><br>
-  <label for="cname">Caracter name:</label<br>
-    <input type="text" id="cname" name="cname"><br>
-  <label for="classtype">Class type:</label<br>
-    <input type="text" id="classtype" name="classtype"><br>
-  <label for="mainhand">Mainhand type:</label<br>
-    <input type="text" id="mainhand" name="mainhand"><br>
-  <label for="mainhanddmg">Mainhand Damage ammount:</label<br>
-    <input type="text" id="mainhanddmg" name="mainhanddmg"><br> 
-  <label for="offhand">Offhand type:</label<br>
-    <input type="text" id="offhand" name="offhand"><br> 
-  <label for="offhanddmg">Offhand Damage ammount:</label<br>
-    <input type="text" id="offhanddmg" name="offhanddmg"><br>
-  <label for="armor">Armor type:</label<br>
-    <input type="text" id="armor" name="armor"><br>
-  <label for="armorresist">Armor Resist ammount:</label<br>
-    <input type="text" id="armorresist" name="armorresist"><br>
-</form>    
+
+<html lang="en">
+    <link href="formStyle.css" rel="stylesheet">
+    <title></title>
+    <header>
+        
+    </header>
+    <body> 
+ <form name="form1">     
+   
+    <label for="fname">First name:</label<br>
+      <input type="text" id="fname" name="fname"><br>
+   <br>
+      <label for="lname">Last name:</label<br>
+      <input type="text" id="lname" name="lname"><br>
+    <br>
+      <label for="cname">Caracter name:</label<br>
+      <input type="text" id="cname" name="cname"><br>
+    <br>
+      <label for="classtype">Class type:</label<br>
+      <input type="text" id="classtype" name="classtype"><br>
+    <br>
+      <label for="mainhand">Mainhand type:</label<br>
+      <input type="text" id="mainhand" name="mainhand"><br>
+    <br>
+      <label for="mainhanddmg">Mainhand Damage ammount:</label<br>
+      <input type="text" id="mainhanddmg" name="mainhanddmg"><br> 
+    <br>
+      <label for="offhand">Offhand type:</label<br>
+      <input type="text" id="offhand" name="offhand"><br> 
+    <br>
+      <label for="offhanddmg">Offhand Damage ammount:</label<br>
+      <input type="text" id="offhanddmg" name="offhanddmg"><br>
+    <br>
+      <label for="armor">Armor type:</label<br>
+      <input type="text" id="armor" name="armor"><br>
+    <br>
+      <label for="armorresist">Armor Resist ammount:</label<br>
+      <input type="text" id="armorresist" name="armorresist"><br>
+    <br>
+    <label>Total Damage:</label>
+<input type="text" name="totalDamage">    
+    </form>
+<br><br>
+<input type="button" value="Calculate Damage" onclick="calculate()">
+
+
+<script type="text/javascript">
+    function calculate(){
+    var offdmg, maindmg, tDamage;
+    offdmg=Number(document.form1.offhanddmg.value);
+    maindmg=Number(document.form1.mainhanddmg.value);
+    tDamage=maindmg+offdmg;
+    document.form1.totalDamage.value=tDamage;
+           
+    }
+    
+    </script>
+</body>
+
+</html>
