@@ -20,39 +20,52 @@
       <label for="classtype">Class type:</label<br>
       <input type="text" id="classtype" name="classtype"><br>
     <br>
-      <label for="mainhand">Mainhand type:</label<br>
-      <input type="text" id="mainhand" name="mainhand"><br>
+      <label for="mainhand">Mainhand type:</label>
+      <input type="text" id="mainhand" name="mainhand"> Dagger $5<br>
     <br>
       <label for="mainhanddmg">Mainhand Damage ammount:</label<br>
       <input type="text" id="mainhanddmg" name="mainhanddmg"><br> 
     <br>
-      <label for="offhand">Offhand type:</label<br>
-      <input type="text" id="offhand" name="offhand"><br> 
+      <label for="offhand">Offhand type:</label>
+      <input type="text" id="offhand" name="offhand"> Short Sword $10<br> 
     <br>
       <label for="offhanddmg">Offhand Damage ammount:</label<br>
       <input type="text" id="offhanddmg" name="offhanddmg"><br>
     <br>
-      <label for="armor">Armor type:</label<br>
-      <input type="text" id="armor" name="armor"><br>
+      <label for="mainPrice">Mainhand Price:</label<br>
+      <input type="text" id="mainPrice" name="mainPrice"><br>
     <br>
-      <label for="armorresist">Armor Resist ammount:</label<br>
-      <input type="text" id="armorresist" name="armorresist"><br>
+      <label for="offPrice">Offhand Price:</label<br>
+      <input type="text" id="offPrice" name="offPrice"><br>
     <br>
-    <label>Total Damage:</label>
-<input type="text" name="totalDamage">    
-    </form>
+      <label>Total Damage:</label>
+      <input type="text" name="totalDamage"><br><br>
+      <label>Total Cost:</label>
+      <input type="text" name="totalCost"><br><br>
+      <label>Discount Price for Total Cost $10:</label>
+      <input type="text" name="discount"><br><br>
+    
+</form>
 <br><br>
 <input type="button" value="Calculate Damage" onclick="calculate()">
 
 
 <script type="text/javascript">
     function calculate(){
-    var offdmg, maindmg, tDamage;
+    var offdmg, maindmg, tDamage, offPrice, mainPrice, tCost, disTotal;
     offdmg=Number(document.form1.offhanddmg.value);
     maindmg=Number(document.form1.mainhanddmg.value);
     tDamage=maindmg+offdmg;
     document.form1.totalDamage.value=tDamage;
-           
+    
+    offPrice=Number(document.form1.offPrice.value);
+    mainPrice=Number(document.form1.mainPrice.value);
+    tCost=offPrice+mainPrice;
+    document.form1.totalCost.value=tCost;
+    if(tCost>10){
+      disTotal=tCost-(tCost*.1);
+      document.form1.discount.value=disTotal;
+    }   
     }
     
     </script>
