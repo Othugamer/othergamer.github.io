@@ -82,16 +82,60 @@ label #cancel{
 
 section {
     height: 100vh;
-    background-image: url("img/websitebackground.png");
+    background-image: url(/img/websitebackground.png);
     background-position: right;
     background-size: 100vh;
     transition: all .5s;
     background-repeat: no-repeat;
 }
 .multimediapage header{
-    
+    text-align: center;
     padding-left: 250px;
     padding-top: 90px;
     font-size: x-large;
+}
+.header2{
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 90px;
+    font-size: x-large;
+}
+.p1{
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 25px;
+    font-size: large;
+}
+.p2{
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 25px;
+    font-size: large;
+}
+.p3{
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 25px;
+    font-size: large;
+}
+.p4{
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 25px;
+    font-size: large;
+}
+.LassoTool{
+    
+    padding-left: 250px;
+    padding-top: 25px;
+    height: 100%;
+    width: 75vh;
+    margin: 0 auto;
+}
+.video_rapper{
+    padding-left: 250px;
+    padding-top: 25px;
+    height: 100%;
+    width: 75vh;
 }
 
